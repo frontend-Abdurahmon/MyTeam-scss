@@ -1,0 +1,156 @@
+.manage {
+    padding: 140px;
+    background-color: #012F34;
+
+}
+
+.manage-container {
+
+}
+
+.manage-line {
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #F67E7E;
+}
+
+.manage-content {
+    display: flex;
+}
+
+.manage-heading {
+    width: 445px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.manage-team {
+
+}
+
+.manage-list {
+    @include reset-list;
+}
+
+.manage-item {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 125px;
+}
+
+.item-content {
+    margin-left: 23px;
+}
+
+.manage-item::before {
+    content: "";
+    background-image: url(/img/people.svg);
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+.team_img::before {
+    content: "";
+    background-image: url(/img/processor.svg);
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+.team_imgs::before {
+    content: "";
+    background-image: url(/img/file.svg);
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+.manage-text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F67E7E;
+}
+
+.item-text {
+    width: 445px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+@include breakpoint-down (776px) {
+    .manage {
+        padding: 64px;
+    }
+    
+    .manage-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .manage-heading {
+        width: 100%;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    
+    .manage-team {
+    
+    }
+    
+    .manage-item {
+        display: flex;
+        justify-content: space-between;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+@include breakpoint-down (577px) {
+    .manage {
+        padding: 64px;    
+    }
+    
+    .manage-content {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+    
+    .manage-heading {
+        width: 100%;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .manage-item {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .manage-text {
+        width: 100%;
+    }
+    
+    .item-text {
+        width: 100%;
+    }
+}

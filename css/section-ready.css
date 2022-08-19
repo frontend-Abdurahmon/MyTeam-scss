@@ -1,0 +1,29 @@
+.ready {
+  padding: 76px;
+  background-color: #F67E7E;
+}
+
+.ready-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ready-heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #012F34;
+}
+
+.ready-btn {
+  padding: 9px 33px;
+  border: 2px solid #012F34;
+  border-radius: 24px;
+  text-decoration: none;
+  color: #012F34;
+}
+
+.ready-btn:hover {
+  background-color: #b6d2d5;
+  color: #F67E7E;
+}/*# sourceMappingURL=section-ready.css.map */
