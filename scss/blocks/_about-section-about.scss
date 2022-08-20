@@ -1,64 +1,68 @@
-.find {
-    
-}
-
-.find-container {
+.about_container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    
+    padding-bottom: 120px;
 }
 
-.find-heading {
+.about_heading {
     width: 615px;
     font-weight: 700;
-    font-size: 100px;
+    font-size: 64px;
     line-height: 100px;
     color: #ffff;
 }
 
-.color {
+.talent_color {
     color: #F67E7E;
 }
 
-.find-content {
+.about_content {
+    margin-left: 30px;
 
 }
 
-.find-line {
+.about_line {
     display: block;
     width: 50px;
     height: 4px;
-    background-color: #79C8C7;
+    background-color: #F67E7E;
 }
 
-.find-text {
-    width: 445px;
-    margin-top: 79px;
+.about_text {
+    margin-top: 40px;
+    width: 730px;
+    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: #ffff;
 }
 
+
 @include breakpoint-down (776px) {
-    .find-container {
+    .about_container {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        padding-bottom: 112px;
         text-align: center;
     }
     
-    .find-heading {
+    .about_heading {
         width: 100%;
         font-size: 64px;
-        line-height: 54px;
+        line-height: 56px;
     }
     
-    .find-line {
+    .about_content {
+    
+    }
+    
+    .about_line {
         display: none;
     }
     
-    .find-text {
+    .about_text {
         margin-top: 24px;
         width: 100%;
         font-size: 15px;
@@ -66,14 +70,11 @@
 }
 
 
+
 @include breakpoint-down (577px) {
-    .find-heading {
+    .about_heading {
         width: 100%;
         font-size: 40px;
         line-height: 40px;
-    }
-
-    .find-text {
-        margin-top: 18px;
     }
 }

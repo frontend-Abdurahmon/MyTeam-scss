@@ -1,0 +1,106 @@
+.contact_container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 114px;
+}
+
+.contact_heading {
+    color: #ffff;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100px;
+}
+
+.contact_text {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #F67E7E;
+    transition: 0.8s;
+}
+
+.contact_text:hover {
+    transform: scale3d(1.2);
+    color: #FFFFFF; 
+    font-size: 40px;
+}
+
+.contact_list {
+    @include reset-list;
+}
+
+.contact_item {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.item_text {
+    color: #ffff;
+    margin-left: 23px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    transition: 0.8s;
+}
+
+.item_text:hover {
+    transform: scale3d(1.2);
+    color: #F67E7E;
+    font-size: 20px;
+}
+
+// FORM PART
+.name { 
+    width: 100%;
+    display: block;
+    margin-top: 24px;
+    padding-bottom: 16px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    border: none;
+    background-color: transparent;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.name:hover {
+    background-color: #004047;
+    color: #F67E7E;
+}
+
+.name:active {
+    color: #F67E7E;
+}
+
+.form_line {
+    display: block;
+    width: 540px;
+    height: 2px;
+    background-color: #FFFFFF;
+}
+
+.form_line:hover {
+    background-color: #F67E7E;
+}
+
+.contact_btn {
+    cursor: pointer;
+    margin-top: 24px;
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #004047;
+    background-color: #ffff;
+}
+
+.contact_btn:hover {
+    background-color: #004047;
+    color: #FFFFFF;
+}

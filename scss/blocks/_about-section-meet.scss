@@ -1,0 +1,201 @@
+.meet {
+    background-color: #004047;
+    padding-bottom: 168px;
+}
+
+.meet-container {
+    padding-top: 140px;
+}
+
+.meet-heading {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.meet-list {
+    margin-top: 64px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.meet-item {
+    background-color: #012F34;
+    text-align: center;
+    width: 350px;
+    height: 253px;
+    transition: all 0.8s linear;
+
+}
+
+.meet-item:hover {
+    background-color: #40838b;
+    transform:  scale(1.1);
+    font-size: 40px;
+    border-radius: 50px;
+
+}
+
+.meet-item:hover .img-item {
+    background-color: #79C8C7;
+    transform: rotate(45deg);
+    transition: 0.4s linear;
+}
+
+.img-link {
+    transition: 0.6s linear;
+    transform: translatey(10px);
+    width: 56px;
+    height: 56px;
+    background-color: #F67E7E;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    // transform: translatey(10px);
+}
+
+.meet-item:hover .img-link {
+    background-color: #79C8C7;
+    transform: rotate(-45deg);
+    transition: 0.4s linear;
+}
+
+.meet-item:active {
+    opacity: 0.2;
+}
+
+.meet-item:hover .box_heading {
+    background-color: #40838b;
+    font-size: 18px;
+    color: #FFFFFF;
+
+}
+
+.meet-item:hover .box_text {
+    color: #79C8C7;
+    font-size: 15px;
+}
+
+.item-2 {
+    margin-top: 76px;
+}
+
+.item-box {
+    padding-top: 32px;
+}
+
+.box_heading {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #79C8C7;
+}
+
+.box_text {
+    margin-top: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 24px;
+    width: 245px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.img-item {
+    transition: 0.6s linear;
+    transform: translatey(-20px);
+    width: 56px;
+    height: 56px;
+    background-color: #F67E7E;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.twitter {
+    margin-right: 16px;
+}
+
+.meet_img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    transform: translatey(30px);
+}
+
+.no-img {
+    transform: translatey(60px);
+}
+
+
+// TABLET VERSION
+@include breakpoint-down (776px)  {
+    .meet-container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .meet-heading {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    
+    .meet-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .meet-item {
+        margin-left: 11px;
+        width: 251px;
+        margin-top: 76px;
+    }
+    
+    .item-2 {
+        margin-top: 76px;
+    }
+    
+    .twitter {
+        margin-right: 1px;
+    }
+}
+
+// MOBILE VERSION
+@include breakpoint-down (577px) {
+    .meet {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .meet-heading {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    
+    .meet-list {
+        margin-top: 48px;
+
+    }
+    
+    .meet-item {
+        margin-right: auto;
+        margin-left: auto;  
+    }
+    
+    .item-2 {
+        margin-top: 76px;
+    }
+}
