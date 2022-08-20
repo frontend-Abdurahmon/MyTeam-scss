@@ -740,6 +740,7 @@ img {
     line-height: 32px;
   }
   .stories_list {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -765,6 +766,7 @@ img {
 }
 @media only screen and (max-width: 577px) {
   .stories_list {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1506,4 +1508,61 @@ img {
 .contact_btn:hover {
   background-color: #004047;
   color: #FFFFFF;
+}
+
+@media only screen and (max-width: 776px) {
+  .contact_container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 112px;
+  }
+  .contact_heading {
+    text-align: center;
+    line-height: 56px;
+  }
+  .contact_text {
+    text-align: center;
+  }
+  .contact_item {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+  }
+  .name {
+    margin-top: 64px;
+    padding-bottom: 24px;
+  }
+  .contact_btn {
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 577px) {
+  .contact_container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 112px;
+  }
+  .contact_heading {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .contact_text {
+    text-align: center;
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .contact_item {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+  }
+  .name {
+    margin-top: 64px;
+    padding-bottom: 24px;
+  }
+  .form_line {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
