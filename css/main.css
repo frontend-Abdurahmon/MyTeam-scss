@@ -378,7 +378,7 @@ img {
 }
 
 .header-nav {
-  margin-left: 80px;
+  margin-left: 40px;
 }
 
 .header-inner {
@@ -477,13 +477,17 @@ img {
 .find-heading {
   width: 615px;
   font-weight: 700;
-  font-size: 100px;
+  font-size: 10px;
   line-height: 100px;
   color: white;
 }
 
 .color {
   color: #F67E7E;
+}
+
+.find-content {
+  display: block;
 }
 
 .find-line {

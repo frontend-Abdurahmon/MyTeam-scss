@@ -1,5 +1,7 @@
 .find {
-    
+    background-image: url(../../img/dark-disk.svg);
+    background-repeat: no-repeat;  
+    background-position: calc(center, 50% - 780px);
 }
 
 .find-container {
@@ -22,7 +24,7 @@
 }
 
 .find-content {
-
+    display: block;
 }
 
 .find-line {
