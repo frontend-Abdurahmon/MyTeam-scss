@@ -477,9 +477,9 @@ img {
 .find-heading {
   width: 615px;
   font-weight: 700;
-  font-size: 10px;
+  font-size: 100px;
   line-height: 100px;
-  color: white;
+  color: #FFFFFF;
 }
 
 .color {
